@@ -11,17 +11,19 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 9, 13, 13;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-[rgb(var(--background-start-rgb))] text-[rgb(var(--foreground-rgb))]
+}
+
+.background-image {
+  @apply fixed top-1/2 left-1/2 w-1/2 h-1/2 -translate-x-1/2 -translate-y-1/2 opacity-25 -z-50
+}
+
+.background-blur {
+  @apply fixed w-full h-full backdrop-blur-2xl -z-40
 }
