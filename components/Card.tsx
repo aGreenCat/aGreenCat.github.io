@@ -20,7 +20,7 @@ const Card = ({title, description, image, link, month, year} : CardProps) => {
             <div className="flex flex-col justify-between w-[250px] gap-3 lg:gap-0">
                 <Title text={title}/>
                 <Description text={description}/>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 items-end justify-between">
                     <Button text="view" link={link}/>
                     <Date month={month} year={year}/>
                 </div>
