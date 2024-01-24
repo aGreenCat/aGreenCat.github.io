@@ -18,12 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + ' no-scrollbar'}>
+      <body className={inter.className + ' no-scrollbar h-dvh pt-10'}>
         <Image src='/gc_icon.svg' alt='green cat logo' width={0} height={0} className='background-image' />
         <div className='background-blur'></div>
 
         <Hero />
-
         {children}
       </body>
     </html>

@@ -10,7 +10,7 @@ const Hero = () => {
   const pathname = usePathname();
   
   return (
-    <div className={`${pathname == '/' ? 'h-dvh' : 'h-48'} flex flex-col flex-wrap items-center justify-center w-4/5 lg:w-[840px] m-auto transition-height ease-in-out duration-800`}>
+    <div className={`relative flex flex-col flex-wrap items-center justify-center w-4/5 lg:w-[840px] mx-auto mb-10 transition-all ease-in-out duration-500 ${pathname=='/' ? 'top-1/2 -translate-y-1/2' : 'top-0'}`}>
         <Greeting />
         <Line />
         <Nav pathname={pathname}/>
