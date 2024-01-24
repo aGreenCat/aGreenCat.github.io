@@ -27,6 +27,14 @@ const page = () => {
             month: 6,
             year: 2022,
         },
+        {
+            title: "Pulley Simulator",
+            description: "A simulation of various pulley configurations, made with VPython.",
+            image: "/Rectangle3.png",
+            link: "",
+            month: 6,
+            year: 2023,
+        }
     ]
 
     return (
