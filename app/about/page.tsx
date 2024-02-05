@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div className="flex flex-row flex-wrap w-[640px] mx-auto justify-between">
+    <div className="flex flex-row flex-wrap w-3/4 md:w-[650px] mt-24 mx-auto gap-8 justify-around md:justify-between">
         <Image src="/Rectangle3.png" alt="Me" width={300} height={300}/>
         <div className="w-[300px]">
             <div>Hey! my name is Tedd Lee, and I’m a first-year undergraduate student attending Macaulay Honors College
