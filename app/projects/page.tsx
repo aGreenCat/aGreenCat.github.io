@@ -12,6 +12,14 @@ interface Project {
 const page = () => {
     let projects : Project[] = [
         {
+            title: "Pulley Simulator",
+            description: "A simulation of various pulley configurations, made with VPython.",
+            image: "/Rectangle3.png",
+            link: "",
+            month: 6,
+            year: 2023,
+        },
+        {
             title: "BrainFudge",
             description: "A visualizer for Brainf*ck code, made in P5.js.",
             image: "/Rectangle3.png",
@@ -27,14 +35,6 @@ const page = () => {
             month: 6,
             year: 2022,
         },
-        {
-            title: "Pulley Simulator",
-            description: "A simulation of various pulley configurations, made with VPython.",
-            image: "/Rectangle3.png",
-            link: "",
-            month: 6,
-            year: 2023,
-        }
     ]
 
     return (
