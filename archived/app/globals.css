@@ -4,13 +4,15 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-rgb: 214, 219, 220;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-rgb: 27, 27, 27;
+    --background-start-rgb: 9, 13, 13;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
@@ -27,9 +29,3 @@
     scrollbar-width: none; /* Firefox */
   }
 } 
-
-
-body {
-	@apply bg-[rgb(var(--background-rgb))] text-[rgb(var(--foreground-rgb))]
-	font-light;
-}
