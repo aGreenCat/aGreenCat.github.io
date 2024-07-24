@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function HomePage() {
 	return (
-		<div className="flex flex-col gap-6">
-			<div className="flex flex-row gap-6 items-center">
-				<Image src="/gc_icon.svg" alt="A photo of me." width={100} height={100} />
+		<div className="flex flex-col gap-10">
+			<div className="flex flex-row gap-10 items-center">
+				<Image src="/Tedd_Lee.jpeg" alt="A photo of me." width={100} height={100} className="rounded-3xl"/>
 				<div className="flex flex-col">
 					<h1 className="text-4xl font-bold">Hey,<br/>I'm Tedd Lee.</h1>
 				</div>

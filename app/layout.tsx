@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { Inter } from 'next/font/google';
+import Navigator from '@/components/Navigator';
 import './globals.css';
 
 const inter = Inter({ 
@@ -18,24 +18,13 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode
 }) {
+
 	return (
 		<html lang="en">
 			<body className={`${inter.variable} font-sans h-screen flex items-stretch justify-end px-10 py-24 gap-10 max-w-[1440px] m-auto`}>
 				<header className='flex flex-col gap-6 items-end justify-center border-white border-r-2 px-10'>
 					<h1 className='text-4xl font-black text-green-gc'>TEDD LEE</h1>
-					<nav>
-						<ul className='flex flex-col items-end gap-6'>
-							<li>
-								<Link href="/">Home</Link>
-							</li>
-							<li>
-								<Link href="/projects">Projects</Link>
-							</li>
-							<li>
-								<Link href="/contact">Contact</Link>
-							</li>
-						</ul>
-					</nav>
+					<Navigator links={[['Home', ''], ['Projects', 'projects'], ['Contact', 'contact']]} base_url='/'/>
 				</header>
 				<main className='flex grow items-center justify-center'>{children}</main>
 			</body>
