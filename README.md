@@ -1,3 +1,3 @@
 # Personal Website
 
-Welcome, this website is still under construction.
+Welcome to my personal Website. Also at [teddlee.me](teddlee.me).
