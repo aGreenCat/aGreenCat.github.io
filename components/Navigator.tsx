@@ -22,7 +22,7 @@ function Navigator(props: NavigatorProps) {
 
 						return (
 							<li key={name}>
-								<Link href={path} className={pathname === path  ? `text-slate-${props.main_color || 50}` : `text-slate-${props.lighter_color || 500}`}>{name}</Link>
+								<Link href={path} className={pathname === path  ? '' : `text-gray-500`}>{name}</Link>
 							</li>
 						)
 					})

@@ -1,5 +1,5 @@
 export default function ProjectPage() {
   return (
-	<div>ProjectPage</div>
+	<div>Select a project to view.</div>
   )
 }
