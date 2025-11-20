@@ -9,7 +9,7 @@ export default function ContactPage() {
 				<SocialIcon target="_blank" url="https://www.instagram.com/greencatted/" bgColor="transparent" fgColor="white" />
 				<SocialIcon target="_blank" url="mailto:tedd0328@gmail.com" bgColor="transparent" fgColor="white" />
 			</div>
-			<a href="Tedd_Lee_Resume_General.pdf" target="blank" className="text-green-gc">resume</a>
+			<a href="Tedd_Lee_Resume.pdf" target="blank" className="text-green-gc">resume</a>
 		</div>
 	)
 }
